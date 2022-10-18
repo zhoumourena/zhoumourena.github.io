@@ -1,2 +1,79 @@
 <p>Hello World</p>
 <h1>明天一定开始做</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xiyou{
+            width: calc(1920px * 3);
+            height: 760px;
+            background: url("img/腾讯会议图片_20220930151359.jpg");
+            animation: qianjin 50s infinite linear;
+        }
+        @keyframes qianjin{
+            0% {transform: translateX(-1920px);}
+            100% {transform: translateX(0);}
+        }
+        .wukong{
+            width: 200px;
+            height: 160px;
+            background: url("img/腾讯会议图片_20220930151355.png");
+            position: absolute;
+            top:400px;
+            left: 400px;
+
+            animation: zou 1s infinite steps(8);
+        }
+        @keyframes zou{
+            100%{background-position: -1600px 0;}
+        }
+        .bajie{
+            width: 200px;
+            height: 160px;
+            background: url("img/腾讯会议图片_20220930151352.png");
+            position: absolute;
+            top:400px;
+            left: 600px;
+
+            animation: zou 1s infinite steps(8);
+        }
+        @keyframes zou1{
+            100%{background-position: -1360px 0;}
+        }
+        .tangsheng{
+            width: 180px;
+            height: 240px;
+            background: url("img/腾讯会议图片_20220930151311.png");
+            position: absolute;
+            top:380px;
+            left: 800px;
+
+            animation: zou1 1s infinite steps(8);
+        }
+        @keyframes zou2{
+            100%{background-position: -1680px 0;}
+        }
+        .sasheng{
+            width: 180px;
+            height: 200px;
+            background: url("img/腾讯会议图片_20220930151404.png");
+            position: absolute;
+            top:400px;
+            left: 1000px;
+
+            animation: zou2 1s infinite steps(8);
+        }
+    </style>
+</head>
+<body>
+    <div class="xiyou"></div>
+    <div class="wukong"></div>
+    <div class="bajie"></div>
+    <div class="tangsheng"></div>
+    <div class="sasheng"></div>
+</body>
+</html>
